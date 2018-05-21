@@ -1,0 +1,30 @@
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) no-repeat center/100%,
+                url('../../public/images/hero-banner.jpg') no-repeat center/cover;
+    height: 100vh;
+
+    .heading-content {
+        margin: auto;
+        text-align: center;
+        padding-top: 10rem;
+
+        .main-title {
+            color: lighten($color__brand-yellow, 10);
+            font-size: 3rem;
+            line-height: 1.8;
+            font-family: $font__title;
+            
+            text-shadow: 2px 2px 4px $color__background;
+            padding-bottom: $base_spacing_unit * 2;
+        }
+    }
+
+    p {
+        color: $color__background;
+        font-family: $font__heading;
+        font-size: 2rem;
+        text-shadow: 2px 2px 2px $color__text;
+        // font-weight: bold;
+        
+    }
+}

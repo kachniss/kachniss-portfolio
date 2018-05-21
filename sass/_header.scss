@@ -1,0 +1,46 @@
+header {
+    width: 100%;
+    padding-top: $base_spacing_unit;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 50px;
+    z-index: 1;
+    text-shadow: 1px 1px 2px $color__light;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+
+    .logo img {
+        width: 50px;
+    }
+
+    nav {
+        letter-spacing: .2rem;
+        li {
+            padding: 0 $base_spacing_unit;
+
+            a {
+                color: $color__background;
+                text-transform: uppercase;
+                text-decoration: none;
+
+                &:focus,
+                &:hover,
+                &:active {
+                    color: $color__brand-yellow;
+                }
+            }
+        }
+    }
+}
+
+.inverse-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)) no-repeat center/100%,
+                lighten($color__text, 20);
+    border-bottom: $border__solid;
+    position: fixed;
+    overflow: hidden;
+    padding-top: 0;
+}

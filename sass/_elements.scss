@@ -1,0 +1,49 @@
+body {
+    background-color: $color__background;
+    font-family: $font__main;
+    color: $color__text;
+    line-height: 1.75;
+    font-size: 16px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: $font__heading;
+    text-transform: uppercase;
+    padding: $base_spacing_unit * 2 0 $base_spacing_unit 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+li {
+    display: inline-block;
+    padding: 0 $base_spacing_unit;
+}
+
+a {
+    color: $color__brand-red;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: darken($color__brand-red, 15);
+        transition: color .5s;
+    }
+}
+
+
+footer {
+    padding: $base_spacing_unit*2 0 $base_spacing_unit/2 0;
+}

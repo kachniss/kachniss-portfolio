@@ -5,3 +5,17 @@ $color__light: #5d5254;
 $color__brand-red: #da3344;
 $color__brand-yellow: #f8c03f;
 
+// borders
+$border__solid: 1px solid $color__text;
+
+// typography
+$font__main: 'OpenSans';
+$font__title: 'Audiowide';
+$font__heading: 'Libre Baskerville', serif;
+
+// RWD
+$tablet-width: 600px;
+$desktop-width: 1000px;
+
+// layout
+$base_spacing_unit: 1.5rem;

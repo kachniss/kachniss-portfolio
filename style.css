@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 @font-face {
   font-family: "OpenSans";
   src: url("../../public/fonts/OpenSans-Light.eot");
@@ -7,8 +56,97 @@
 
 body {
   background-color: #ffffff;
-  font-family: OpenSans;
-  color: #172c33; }
+  font-family: "OpenSans";
+  color: #172c33;
+  line-height: 1.75;
+  font-size: 16px;
+  text-align: center; }
+
+h1, h2, h3 {
+  font-family: "Libre Baskerville", serif;
+  text-transform: uppercase;
+  padding: 3rem 0 1.5rem 0; }
 
 h1 {
-  color: blue; }
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.8rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+li {
+  display: inline-block;
+  padding: 0 1.5rem; }
+
+a {
+  color: #da3344;
+  text-decoration: none;
+  font-weight: bold; }
+  a:hover, a:focus, a:active {
+    color: #a31e2b;
+    -webkit-transition: color .5s;
+    transition: color .5s; }
+
+footer {
+  padding: 3rem 0 0.75rem 0; }
+
+header {
+  width: 100%;
+  padding-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 50px;
+  z-index: 1;
+  text-shadow: 1px 1px 2px #5d5254;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  header .logo img {
+    width: 50px; }
+  header nav {
+    letter-spacing: .2rem; }
+    header nav li {
+      padding: 0 1.5rem; }
+      header nav li a {
+        color: #ffffff;
+        text-transform: uppercase;
+        text-decoration: none; }
+        header nav li a:focus, header nav li a:hover, header nav li a:active {
+          color: #f8c03f; }
+
+.inverse-header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.4))) no-repeat center/100%, #376979;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)) no-repeat center/100%, #376979;
+  border-bottom: 1px solid #172c33;
+  position: fixed;
+  overflow: hidden;
+  padding-top: 0; }
+
+.banner {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))) no-repeat center/100%, url("../../public/images/hero-banner.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) no-repeat center/100%, url("../../public/images/hero-banner.jpg") no-repeat center/cover;
+  height: 100vh; }
+  .banner .heading-content {
+    margin: auto;
+    text-align: center;
+    padding-top: 10rem; }
+    .banner .heading-content .main-title {
+      color: #fad070;
+      font-size: 3rem;
+      line-height: 1.8;
+      font-family: "Audiowide";
+      text-shadow: 2px 2px 4px #ffffff;
+      padding-bottom: 3rem; }
+  .banner p {
+    color: #ffffff;
+    font-family: "Libre Baskerville", serif;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px #172c33; }
