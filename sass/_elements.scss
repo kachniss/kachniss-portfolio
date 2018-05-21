@@ -3,9 +3,15 @@ body {
     font-family: $font__main;
     color: $color__text;
     line-height: 1.75;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
+    min-width: 400px;
+
+    @include tablet {
+        font-size: 16px;
+    }
 }
+
 
 h1, h2, h3 {
     font-family: $font__heading;
@@ -22,12 +28,12 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 li {
     display: inline-block;
-    padding: 0 $base_spacing_unit;
+    padding: $base_spacing_unit/4 $base_spacing_unit;
 }
 
 a {
@@ -38,12 +44,23 @@ a {
     &:hover,
     &:focus,
     &:active {
-        color: darken($color__brand-red, 15);
+        color: $color__brand-yellow;
         transition: color .5s;
     }
 }
 
+p {
+    padding: 0 $base_spacing_unit;
+    @include tablet {
+        padding: 0 $base_spacing_unit*4;
+    }
+}
 
 footer {
     padding: $base_spacing_unit*2 0 $base_spacing_unit/2 0;
+    .fab {
+        font-size: 25px;
+        padding: 0 $base_spacing_unit/4;
+    }
 }
+

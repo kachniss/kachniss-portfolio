@@ -6,7 +6,12 @@
     .heading-content {
         margin: auto;
         text-align: center;
-        padding-top: 10rem;
+        padding-top: $base_spacing_unit * 3;
+
+        @include tablet {
+            padding-top: $base_spacing_unit * 5;
+        }
+        
 
         .main-title {
             color: lighten($color__brand-yellow, 10);
@@ -24,7 +29,68 @@
         font-family: $font__heading;
         font-size: 2rem;
         text-shadow: 2px 2px 2px $color__text;
-        // font-weight: bold;
+        text-transform: uppercase;   
+    }
+}
+
+#projects ul {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include desktop {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .project {
+
+        div {
+            height: 200px;
+            border-radius: 5px;
+            transition: opacity .5s;
+            margin-bottom: $base_spacing_unit/2;
+
+            &:hover {
+                opacity: .5;
+            }
+        }
         
+        .inhabitent-thumbnail {
+            background: url('../../public/images/screenshots/inhabitent-1.jpg') no-repeat center/cover;
+        }
+
+        .pong-thumbnail {
+            background: url('../../public/images/screenshots/pong-1.jpg') no-repeat center/cover;
+        }
+
+        .instanews-thumbnail {
+            background: url('../../public/images/screenshots/instanews-1.jpg') no-repeat center/cover;
+        }
+
+        .aloha-thumbnail {
+            background: url('../../public/images/screenshots/aloha-1.jpg') no-repeat center/cover;
+        }
+    }   
+}
+
+#skills, #interests, #projects ul {
+    padding: 0 $base_spacing_unit;
+    @include tablet {
+        padding: 0 $base_spacing_unit*4;
+    } 
+
+    .fab {
+        padding-right: $base_spacing_unit/3;
+    }
+}
+
+#skills, #interests {
+    li {
+        background: lighten($color__light, 50);
+        border-radius: 20px;
+        margin: $base_spacing_unit/2;
     }
 }
