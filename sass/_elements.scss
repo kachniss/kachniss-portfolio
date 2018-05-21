@@ -57,10 +57,17 @@ p {
 }
 
 footer {
-    padding: $base_spacing_unit*2 0 $base_spacing_unit/2 0;
+    margin-top: $base_spacing_unit*2;
+    padding: $base_spacing_unit/2 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)) no-repeat center/100%,
+                $color__text;
     .fab {
         font-size: 25px;
-        padding: 0 $base_spacing_unit/4;
+        padding: $base_spacing_unit/4;
+    }
+
+    p {
+        color: $color__background;
     }
 }
 

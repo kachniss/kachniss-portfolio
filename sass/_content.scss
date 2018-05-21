@@ -31,6 +31,13 @@
         text-shadow: 2px 2px 2px $color__text;
         text-transform: uppercase;   
     }
+
+    .fas {
+        font-size: 35px;
+        color: $color__background;
+        position: absolute;
+        bottom: $base_spacing_unit;
+    }
 }
 
 #projects ul {
