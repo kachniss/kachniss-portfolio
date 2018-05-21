@@ -40,6 +40,7 @@ h3 {
 li {
     display: inline-block;
     padding: $base_spacing_unit/4 $base_spacing_unit;
+    transition: background .5s;
 }
 
 a {

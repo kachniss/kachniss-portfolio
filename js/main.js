@@ -42,4 +42,36 @@ $(function(){
         $('html, body').stop().animate( {scrollTop: bannerHeight - headerHeight}, 2000);
     });
 
+
+    /**
+     * hightlight skills
+     */
+    $('.inhabitent-thumbnail').on('mouseover', function() {
+        $('.inh').css('background', '#da3344');
+    });
+    $('.inhabitent-thumbnail').on('mouseleave', function() {
+        $('.inh').css('background', '#dad4d5');
+    });
+
+    $('.pong-thumbnail').on('mouseover', function() {
+        $('.pong').css('background', '#da3344');
+    });
+    $('.pong-thumbnail').on('mouseleave', function() {
+        $('.pong').css('background', '#dad4d5');
+    });
+
+    $('.instanews-thumbnail').on('mouseover', function() {
+        $('.insta').css('background', '#da3344');
+    });
+    $('.instanews-thumbnail').on('mouseleave', function() {
+        $('.insta').css('background', '#dad4d5');
+    });
+
+    $('.aloha-thumbnail').on('mouseover', function() {
+        $('.aloha').css('background', '#da3344');
+    });
+    $('.aloha-thumbnail').on('mouseleave', function() {
+        $('.aloha').css('background', '#dad4d5');
+    });
+
 });

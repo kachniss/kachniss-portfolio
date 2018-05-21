@@ -7,6 +7,7 @@ const cssnano = require('gulp-cssnano');
 const uglify = require('gulp-uglify');
 const eslint = require('gulp-eslint');
 const browserSync = require('browser-sync');
+const imagemin = require('gulp-imagemin');
 
 // Create basic Gulp tasks
 
@@ -49,6 +50,12 @@ gulp.task(
   })
 );
 
+gulp.task('image-min', function() {
+  gulp.src('./public/images/**')
+      .pipe(imagemin())
+      .pipe(gulp.dest('./build/images'))
+});
+
 // Set-up BrowserSync and watch
 
 gulp.task('browser-sync', function() {
@@ -71,4 +78,4 @@ gulp.task('reload', function() {
   browserSync.reload();
 });
 
-gulp.task('default', gulp.parallel('browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('browser-sync', 'watch', 'image-min'));
