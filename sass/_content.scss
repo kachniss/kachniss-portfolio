@@ -2,41 +2,58 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) no-repeat center/100%,
                 url('../../public/images/hero-banner.jpg') no-repeat center/cover;
     height: 100vh;
+    min-height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
 
     .heading-content {
         margin: auto;
-        text-align: center;
-        padding-top: $base_spacing_unit * 3;
+        // text-align: center;
+        // align-self: center;
+        height: 80%;
+        // padding-top: $base_spacing_unit * 3;
 
         @include tablet {
-            padding-top: $base_spacing_unit * 5;
+            // padding-top: $base_spacing_unit * 5;
         }
         
 
         .main-title {
             color: lighten($color__brand-yellow, 10);
-            font-size: 3rem;
+            font-size: 2rem;
             line-height: 1.8;
             font-family: $font__title;
-            
             text-shadow: 2px 2px 4px $color__background;
             padding-bottom: $base_spacing_unit * 2;
+
+            @include tablet {
+                font-size: 3rem;
+            }
         }
     }
 
     p {
         color: $color__background;
         font-family: $font__heading;
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-shadow: 2px 2px 2px $color__text;
-        text-transform: uppercase;   
+        text-transform: uppercase; 
+
+        @include tablet {
+            font-size: 2rem;
+        }
     }
 
     .fas {
         font-size: 35px;
         color: $color__background;
-        position: absolute;
-        bottom: $base_spacing_unit;
+        flex-basis: 100%;
+        padding-bottom: $base_spacing_unit/2;
+        // align-self: flex-end;
+        // position: absolute;
+        // bottom: $base_spacing_unit;
     }
 }
 

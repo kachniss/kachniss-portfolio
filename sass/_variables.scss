@@ -18,4 +18,8 @@ $tablet-width: 600px;
 $desktop-width: 1000px;
 
 // layout
-$base_spacing_unit: 1.5rem;
+$base_spacing_unit: 1.2rem;
+
+@include tablet {
+    $base_spacing_unit: 1.5rem;
+}

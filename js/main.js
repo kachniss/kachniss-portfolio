@@ -5,6 +5,7 @@ $(function(){
      * smooth scrolling
     */
     $('a[href^="#"]').on('click', function(event) {
+        headerHeight = $('header').height();       
         var target = $(this.getAttribute('href'));
         if(target.length) {
             event.preventDefault();
@@ -19,17 +20,17 @@ $(function(){
      */
     var bannerHeight = $('.banner').height();
 
-    if ($(window).scrollTop() <= bannerHeight) {
+    if ($(window).scrollTop() >= bannerHeight - headerHeight) {
         $('header').addClass('inverse-header');
     }
 
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
 
-        if (scroll >= bannerHeight - headerHeight) {
+        if (scroll >= bannerHeight - headerHeight - 1) {
             $('header').addClass('inverse-header');
         } else {
-            $('header').removeClass('inverse-header'); 
+            $('header').removeClass('inverse-header');
         }
     });
 
@@ -37,7 +38,8 @@ $(function(){
      * banner arrow scroll
      */
     $('.js-enter-arrow').on('click', function() {
-        $("html, body").stop().animate( {scrollTop: bannerHeight - headerHeight}, 2000);
+        headerHeight = $('header').height();
+        $('html, body').stop().animate( {scrollTop: bannerHeight - headerHeight}, 2000);
     });
 
 });
