@@ -1,6 +1,5 @@
 header {
     width: 100%;
-    // padding-top: $base_spacing_unit;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 60px;
@@ -20,8 +19,9 @@ header {
         padding-top: $base_spacing_unit/2;
         img {
             width: 60px;
+            border-radius: 50%;
             @include tablet {
-                padding-left: $base_spacing_unit;
+                margin-left: $base_spacing_unit*4;
             }
         }
     }
@@ -29,6 +29,7 @@ header {
     nav {
         padding-top: $base_spacing_unit/1.5;
         letter-spacing: .2rem;
+        font-family: $font__heading;
         @include tablet {
             text-align: right;
             padding-right: $base_spacing_unit;

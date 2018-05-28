@@ -1,6 +1,6 @@
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) no-repeat center/100%,
-                url('../../public/images/hero-banner.jpg') no-repeat center/cover;
+                url('../images/hero-banner.jpg') no-repeat center/cover;
     height: 100vh;
     min-height: 480px;
     display: flex;
@@ -39,7 +39,7 @@
     }
 
     .fas {
-        font-size: 35px;
+        font-size: 20px;
         color: $color__background;
         flex-basis: 100%;
         padding-bottom: $base_spacing_unit/2;
@@ -47,25 +47,32 @@
 }
 
 #projects ul {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    @include tablet {
-        grid-template-columns: 1fr 1fr;
-    }
-    @include desktop {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-sizing: border-box;
+
+    li {
+        padding: 0;
     }
 
     .project {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         p {
             font-size: .9rem;
             padding: 0;
+            display: block;
+            @include tablet {
+                height: 70px;
+            }
+ 
         }
         .thumbnail {
             height: 200px;
+            width: 90%;
+            margin: auto;
             border-radius: 5px;
+            border: 1px solid rgba(128, 128, 128, 0.5);
+            box-shadow: 2px 2px 5px #bdbdbd;
             transition: opacity .5s;
             margin: $base_spacing_unit/2 0;
 
@@ -74,6 +81,10 @@
             }
         }
         
+        .quotesondev-thumbnail {
+            background: url('../images/screenshots/quotesondev-1.jpg') no-repeat center/cover;
+        }
+
         .inhabitent-thumbnail {
             background: url('../images/screenshots/inhabitent-1.jpg') no-repeat center/cover;
         }
@@ -89,23 +100,57 @@
         .aloha-thumbnail {
             background: url('../images/screenshots/aloha-1.jpg') no-repeat center/cover;
         }
+
     }   
 }
 
-#skills, #interests, #projects ul {
+.flickity-viewport {
+    width: 100%; 
+}
+.main-carousel {
+    width: 90%;
+    margin: auto;
+}
+
+.carousel-cell {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    cursor: auto;
+
+    @include tablet {
+        width: 50%;
+    }
+
+    @include desktop {
+        width: 25%;
+    }
+}
+
+.flickity-page-dots {
+    margin: $base_spacing_unit 0 $base_spacing_unit*2 0;
+    // padding-bottom: $base_spacing_unit * 2;
+    position: static;
+}
+
+#skills {
+    // margin-top: $base_spacing_unit * 2;
+}
+
+#skills, #interests {
     padding: 0 $base_spacing_unit;
     @include tablet {
         padding: 0 $base_spacing_unit*4;
     } 
+}
 
-    .fab {
-        padding-right: $base_spacing_unit/3;
-    }
+.fab {
+    padding-right: $base_spacing_unit/3;
 }
 
 #skills, #interests {
     li {
-        background: lighten($color__light, 50);
+        background: lighten($color__light, 60);
         border-radius: 20px;
         margin: $base_spacing_unit/2;
     }

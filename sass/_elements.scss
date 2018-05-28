@@ -16,7 +16,7 @@ body {
 h1, h2, h3 {
     font-family: $font__heading;
     text-transform: uppercase;
-    padding: $base_spacing_unit * 2 0 $base_spacing_unit 0;
+    margin: $base_spacing_unit * 2 0 $base_spacing_unit 0;
 }
 
 h1 {
