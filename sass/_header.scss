@@ -67,7 +67,7 @@ header {
 
 .inverse-header {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)) no-repeat center/100%,
-                lighten($color__text, 20);
+                $color__brand-blue;
     border-bottom: $border__solid;
     position: fixed;
     overflow: hidden;

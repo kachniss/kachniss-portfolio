@@ -50,41 +50,40 @@ $(function(){
         $('.quotes').css('background', '#da3344');
     });
     $('.quotesondev-thumbnail').on('mouseleave', function() {
-        $('.quotes').css('background', '#f1f0f0');
+        $('.quotes').css('background', '#376979');
     });
 
     $('.inhabitent-thumbnail').on('mouseover', function() {
         $('.inh').css('background', '#da3344');
     });
     $('.inhabitent-thumbnail').on('mouseleave', function() {
-        $('.inh').css('background', '#f1f0f0');
+        $('.inh').css('background', '#376979');
     });
 
     $('.pong-thumbnail').on('mouseover', function() {
         $('.pong').css('background', '#da3344');
     });
     $('.pong-thumbnail').on('mouseleave', function() {
-        $('.pong').css('background', '#f1f0f0');
+        $('.pong').css('background', '#376979');
     });
 
     $('.instanews-thumbnail').on('mouseover', function() {
         $('.insta').css('background', '#da3344');
     });
     $('.instanews-thumbnail').on('mouseleave', function() {
-        $('.insta').css('background', '#f1f0f0');
+        $('.insta').css('background', '#376979');
     });
 
     $('.aloha-thumbnail').on('mouseover', function() {
         $('.aloha').css('background', '#da3344');
     });
     $('.aloha-thumbnail').on('mouseleave', function() {
-        $('.aloha').css('background', '#f1f0f0');
+        $('.aloha').css('background', '#376979');
     });
 
     /**
      * Flickity
      */
-    //
     $(".main-carousel").flickity({
         cellAlign: "left",
         contain: true,
@@ -92,7 +91,6 @@ $(function(){
         draggable: true,
         imagesLoaded: true,
         wrapAround: true,
-        // pageDots: false
     });
 
 });
