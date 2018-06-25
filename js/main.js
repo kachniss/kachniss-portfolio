@@ -50,35 +50,35 @@ $(function(){
         $('.quotes').css('background', '#da3344');
     });
     $('.quotesondev-thumbnail').on('mouseleave', function() {
-        $('.quotes').css('background', '#376979');
+        $('.quotes').css('background', '#172c33');
     });
 
     $('.inhabitent-thumbnail').on('mouseover', function() {
         $('.inh').css('background', '#da3344');
     });
     $('.inhabitent-thumbnail').on('mouseleave', function() {
-        $('.inh').css('background', '#376979');
+        $('.inh').css('background', '#172c33');
     });
 
     $('.pong-thumbnail').on('mouseover', function() {
         $('.pong').css('background', '#da3344');
     });
     $('.pong-thumbnail').on('mouseleave', function() {
-        $('.pong').css('background', '#376979');
+        $('.pong').css('background', '#172c33');
     });
 
     $('.instanews-thumbnail').on('mouseover', function() {
         $('.insta').css('background', '#da3344');
     });
     $('.instanews-thumbnail').on('mouseleave', function() {
-        $('.insta').css('background', '#376979');
+        $('.insta').css('background', '#172c33');
     });
 
     $('.aloha-thumbnail').on('mouseover', function() {
         $('.aloha').css('background', '#da3344');
     });
     $('.aloha-thumbnail').on('mouseleave', function() {
-        $('.aloha').css('background', '#376979');
+        $('.aloha').css('background', '#172c33');
     });
 
     /**

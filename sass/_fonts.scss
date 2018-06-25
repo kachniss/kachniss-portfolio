@@ -9,6 +9,18 @@
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+@font-face {
+    font-family: "James Fajardo";
+    src: url("../../public/fonts/JamesFajardo.eot");
+    src: url("../../public/fonts/JamesFajardo.eot?#iefix") format("embedded-opentype"),
+        url("../../public/fonts/JamesFajardo.woff") format("woff"),
+        url("../../public/fonts/JamesFajardo.ttf") format("truetype"),
+        url("../../public/fonts/JamesFajardo.svg#opensans") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 

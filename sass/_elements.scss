@@ -40,7 +40,7 @@ h3 {
 li {
     display: inline-block;
     padding: $base_spacing_unit/4 $base_spacing_unit;
-    transition: background .5s;
+    transition: background-color .5s;
 }
 
 a {
@@ -57,24 +57,23 @@ a {
 }
 
 p {
+    display: inline-block;
     padding: 0 $base_spacing_unit;
+    margin-bottom: $base_spacing_unit;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+
     @include tablet {
-        padding: 0 $base_spacing_unit*4;
-    }
-}
-
-footer {
-    margin-top: $base_spacing_unit*2;
-    padding: $base_spacing_unit/2 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)) no-repeat center/100%,
-                $color__text;
-    .fab {
-        font-size: 25px;
-        padding: $base_spacing_unit/4;
-    }
-
-    p {
-        color: $color__background;
+        // padding: 0 $base_spacing_unit * 4;
+        max-width: 70%;
+        margin: auto;
+        margin-bottom: $base_spacing_unit;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 }
 

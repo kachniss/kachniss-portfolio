@@ -1,0 +1,15 @@
+footer {
+    margin-top: $base_spacing_unit*2;
+    padding: $base_spacing_unit/2 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)) no-repeat center/100%,
+                $color__text;
+    .fab {
+        font-size: 25px;
+        padding: $base_spacing_unit/4;
+    }
+
+    p {
+        color: $color__background;
+        display: block;
+    }
+}
