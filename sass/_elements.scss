@@ -35,6 +35,9 @@ h2 {
 
 h3 {
     font-size: 1.3rem;
+    min-height: 4.5rem;
+    display: flex;
+    align-items: center;
 }
 
 li {
@@ -65,9 +68,7 @@ p {
         margin-bottom: 0;
     }
 
-
     @include tablet {
-        // padding: 0 $base_spacing_unit * 4;
         max-width: 70%;
         margin: auto;
         margin-bottom: $base_spacing_unit;
@@ -75,5 +76,9 @@ p {
             margin-bottom: 0;
         }
     }
+}
+
+em {
+    font-weight: bold;
 }
 

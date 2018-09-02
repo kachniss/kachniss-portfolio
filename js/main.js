@@ -46,6 +46,13 @@ $(function(){
     /**
      * hightlight skills
      */
+    $('.foodcolour-thumbnail').on('mouseover', function() {
+        $('.food').css('background', '#da3344');
+    });
+    $('.foodcolour-thumbnail').on('mouseleave', function() {
+        $('.food').css('background', '#172c33');
+    });
+
     $('.quotesondev-thumbnail').on('mouseover', function() {
         $('.quotes').css('background', '#da3344');
     });

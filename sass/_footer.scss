@@ -6,6 +6,7 @@ footer {
     .fab {
         font-size: 25px;
         padding: $base_spacing_unit/4;
+        transition: color .5s;
     }
 
     p {
