@@ -4,7 +4,7 @@
   "description": "Portfolio for Kachniss.com",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-imagemin": "^7.1.0",
+    "gulp-imagemin": "^9.2.0",
     "hoek": "^6.1.3"
   },
   "devDependencies": {
